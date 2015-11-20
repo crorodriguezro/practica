@@ -3,10 +3,10 @@
 Guia para principiantes de Nodejs.
 
 1. Instalar `nodejs` y el administrador de paquetes `npm` con el cual descargaremos librerias.
-	sudo apt-get install nodejs
-	sudo apt-get install npm
+	`sudo apt-get install nodejs`
+	`sudo apt-get install npm`
 2. Para el segundo reto es necesario instalar la libreria `gm`.
-	npm install gm
+	`npm install gm`
 
 ## Retos
 
