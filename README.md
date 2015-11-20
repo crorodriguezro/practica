@@ -5,7 +5,7 @@ Guia para principiantes de Nodejs.
 1. Instalar `nodejs` y el administrador de paquetes `npm` con el cual descargaremos librerias.
 
 	`sudo apt-get install nodejs`
-		
+
 	`sudo apt-get install npm`
 2. Para el segundo reto es necesario instalar la libreria `gm`.
 
@@ -18,6 +18,10 @@ Usando las librerias estandar de node `http` y `fs`, leer un archivo csv y crear
 
 ### Reto dos: Librerias externas OpenShift
 Usando la libreria estandar `http` y la libreria externa `gm`, crear un servidor http que reciba la url de una imagen como parametro y retorne una miniatura de 100x100 pixeles. Para este reto es necesario instalar la libreria `gm`.
+
+### Reto tres: Subir aplicación a OpenShift
+Para subir la aplicación a OpenShift es necesario crear una cuenta en https://www.openshift.com/, luego vamos a crear una nueva aplicación de nodejs.
+Subimos el codigo y ejecutamos.
 
 
 
