@@ -9,7 +9,10 @@
 	$ sudo apt-get install npm
 	```
 2. Para el segundo reto es necesario instalar la libreria `gm`.  
+
     ```
+	# gm necesita imagemagick, entonces lo instalamos  
+	$ sudo apt-get install imagemagick  
 	$ npm install gm
     ```  
     
