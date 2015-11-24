@@ -14,13 +14,14 @@ http.createServer(function(req, res) {
     var stream = request(query.url);
     var bufs = [];
     
-    stream.on('data', function(data) {
+    // TODO: Event fires when data arrives.
+    stream.on('CHANGEME', function(data) {
     // TODO: How to add an element to an array
-       bufs.push(data);
+       bufs.CHANGEME(data);
     });
     
     // TODO: Event fires when there will be no more data to read.
-    stream.on('end', function() {
+    stream.on('CHANGEME', function() {
         var buf = Buffer.concat(bufs);
         gm(buf)
         .resize(100)
