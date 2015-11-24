@@ -2,15 +2,17 @@
 
 
 
-1. Instalar `nodejs` y el administrador de paquetes `npm` con el cual descargaremos librerias. *Koding ya trae instalado node.js y npm*.
+1. Instalar `nodejs` y el administrador de paquetes `npm` con el cual descargaremos librerias. *Koding ya trae instalado node.js y npm*.  
+
     ```
-	$ sudo apt-get install nodejs
+	$ sudo apt-get install nodejs  
 	$ sudo apt-get install npm
 	```
-2. Para el segundo reto es necesario instalar la libreria `gm`.
+2. Para el segundo reto es necesario instalar la libreria `gm`.  
     ```
 	$ npm install gm
-    ```
+    ```  
+    
 ## Retos
 
 ### Reto uno: Librerias estandar
