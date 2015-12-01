@@ -26,7 +26,22 @@ Usando la libreria estandar `http` y la libreria externa `gm`, crear un servidor
 
 ### Reto tres: Subir aplicación a OpenShift
 Para subir la aplicación a OpenShift es necesario crear una cuenta en https://www.openshift.com/, luego vamos a crear una nueva aplicación de nodejs.
-Subimos el codigo y ejecutamos.
+Desplegar una aplicación en OpenShift es bastante sencillo, en la imagen podemos visualizar todo el proceso.  
+![alt tag](https://blog.openshift.com/wp-content/uploads/imported/Git-Windows-2x.png)  
+La primera parte de este reto consiste en hacer fork de un repositorio en `git`, clonar el repo y subir la app a OpenShift. Luego, si aún queda tiempo, en la segunda parte vamos a agregar la funcionalidad realizada en el reto dos a esta app.  
+#####Resumen de la primera parte del reto:  
+1. Hacer fork de este repositorio https://github.com/orioniota/nodejs.
+2. Clonar el repo en Koding.
+3. Agregar el repositorio remoto de OpenShift.
+4. Hacer merge entre el repo de Openshift y el repo local. (Esto solo se hace la primer vez que se hace push. ¿Por qué?)
+5. Hacer push.
+6. La app se va a actualizar sola, probar la URL. 
+7. Listo!  
+
+#####Pistas  y preguntas adicionales de la segunda parte del reto:  
+* En el repo que estan usando hay nuevo archivo llamado `package.json`. ¿Para qué sirve?
+* También hay una directorio llamado `.openshift`. ¿Para qué sirve?
+* Hay una nueva dependencia llamada `express`. ¿Para qué sirve? ¿Para qué lo estamos usando?
 
 ##Información adicional
 ###Autenticación Openshift
@@ -60,7 +75,7 @@ The key's randomart image is:
 
 ```
 
-Ya tenemos las llaves generadas, ahora vamos a subir la publica a Openshift.
+Ya tenemos las llaves generadas, ahora la agregamos a ssh-agent para git la use.
 
 1. Entramos a https://openshift.redhat.com/app/console/keys/new
 2. Le damos un nombre a la llave y pegamos el contenido del archivo `koding.pub`
